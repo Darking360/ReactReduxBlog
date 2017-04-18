@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "Boilerplate",
   "version": "1.0.0",
-  "description": "Hello React application with ExpressJS",
+  "description": "Bootstrap for React + Redux",
   "main": "index.js",
   "scripts": {
     "test": "karma start"
@@ -31,7 +31,6 @@
     "babel-preset-react": "^6.22.0",
     "css-loader": "^0.26.1",
     "expect": "^1.20.2",
-    "foundation-sites": "^6.3.0",
     "jquery": "^3.1.1",
     "karma": "^1.4.1",
     "karma-chrome-launcher": "^2.0.0",
