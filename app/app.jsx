@@ -4,8 +4,7 @@ import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 import Main from 'Main'
 
 //Load foundation
-require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
-$(document).foundation();
+require('style-loader!css-loader!bootstrap/dist/css/bootstrap.min.css');
 
 ReactDOM.render(
   <Router history={hashHistory}>

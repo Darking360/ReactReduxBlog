@@ -3,7 +3,7 @@ var webpack = require('webpack')
 module.exports = {
   entry: [
     'script-loader!jquery/dist/jquery.min.js',
-    'script-loader!foundation-sites/dist/js/foundation.min.js',
+    'script-loader!bootstrap/dist/js/bootstrap.min.js',
     './app/app.jsx'
   ],
   externals: {
@@ -15,9 +15,13 @@ module.exports = {
       jQuery: "jquery"
     })
   ],
+  devServer: {
+    contentBase: "public",
+    port: 3000
+  },
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
   },
   resolve: {
     alias: {
@@ -34,7 +38,8 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
-      }
+      },
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
     ]
   },
   devtool: 'cheap-module-eval-source-map'
