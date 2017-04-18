@@ -1,7 +1,7 @@
 {
-  "name": "Boilerplate",
+  "name": "ReactReduxTry",
   "version": "1.0.0",
-  "description": "Bootstrap for React + Redux",
+  "description": "Trying React + Redux - Udemy course",
   "main": "index.js",
   "scripts": {
     "test": "karma start"
