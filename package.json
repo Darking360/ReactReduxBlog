@@ -1,7 +1,7 @@
 {
-  "name": "ReactReduxTry",
+  "name": "ReactReduxWeather",
   "version": "1.0.0",
-  "description": "Trying React + Redux - Udemy course",
+  "description": "React + Redux Weather App",
   "main": "index.js",
   "scripts": {
     "test": "karma start"

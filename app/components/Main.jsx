@@ -1,8 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 
-import BookList from '../containers/book_list'
-import BookDetail from '../containers/book_detail'
+import SearchBar from '../containers/search_bar'
 
 class Main extends React.Component {
   constructor(props){
@@ -11,8 +10,8 @@ class Main extends React.Component {
   render(){
     return(
       <div>
-        <BookList />
-        <BookDetail />
+        <h3>Boilerplate</h3>
+        <SearchBar />
       </div>
     );
   }
