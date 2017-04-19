@@ -1,11 +1,8 @@
 import { combineReducers } from 'redux'
+import WeatherReducer from './reducer_weather'
 
-import BooksReducer from './reducer_books'
-import ActiveBookReducer from './reducer_active_book'
-
-const rootReducer = combineReducers({
-  books: BooksReducer,
-  activeBook: ActiveBookReducer
+const reducers = combineReducers({
+  weather: WeatherReducer
 });
 
-export default rootReducer;
+export default reducers;
