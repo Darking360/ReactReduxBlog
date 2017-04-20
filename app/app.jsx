@@ -1,14 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Route, Router, IndexRoute, hashHistory} from 'react-router'
-import Main from 'Main'
+import {Router, hashHistory} from 'react-router'
 import ReduxPromise from 'redux-promise'
-
 import {Provider} from "react-redux"
-
 import reducers from './reducers'
-
 import { createStore, applyMiddleware } from 'redux'
+import routes from './routes'
 
 //Load foundation
 require('style-loader!css-loader!bootstrap/dist/css/bootstrap.min.css');
@@ -18,11 +15,7 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
   <Provider store={ createStoreWithMiddleware(reducers) }>
-    <Router history={hashHistory}>
-      <Route path="/" component={Main}>
-
-      </Route>
-    </Router>
+    <Router history={hashHistory} routes={routes} />
   </Provider>
   ,
   document.getElementById("app")
